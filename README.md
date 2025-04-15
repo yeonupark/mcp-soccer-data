@@ -8,11 +8,13 @@
 ## ✨ Features
 
 ### 🏟️ Live Football Match Insights
-MCP-Soccerdata focuses on delivering real-time information about ongoing football matches around the world. 
+MCP-Soccerdata focuses on delivering **real-time information about ongoing football matches around the world.**
 
 > "What football matches are being played right now?"      
-> → Returns a list of live matches with detailed breakdowns
+> "What are the predicted lineups for PSG vs Aston Villa today?"       
+> "Please tell me the scores and number of goals from recent football matches."
 
+→ Provides relevant football data in a structured format, including the detailed categories described below.
 
 ### - Match Listings & Basic Info
 - Global list of all currently active matches
@@ -57,6 +59,11 @@ MCP-Soccerdata focuses on delivering real-time information about ongoing footbal
 > ⚠️ Focused exclusively on **live**, **upcoming**, and **recently finished** matches
 
 ---
+## 🎥 Demo
+
+![mcp (3) (1)](https://github.com/user-attachments/assets/03f63020-e467-48d3-8bbc-e97f9bd26e5b)
+
+---
 
 ## 🚀 Quick Start
 
@@ -66,13 +73,12 @@ MCP-Soccerdata focuses on delivering real-time information about ongoing footbal
 - Soccerdata API account
 - MCP-compatible client (e.g., Claude for Desktop)
 
----
 
 ### 1. Clone and Setup
 
 - Clone the repository
 ```bash
-git clone https://github.com/yourusername/mcp-soccer-data.git
+git clone https://github.com/yeonupark/mcp-soccer-data.git
 cd mcp-soccer-data
 ```
 - Install dependencies
