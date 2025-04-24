@@ -1,4 +1,5 @@
 # ⚽️ Soccerdata MCP Server
+[![smithery badge](https://smithery.ai/badge/@yeonupark/mcp-soccer-data)](https://smithery.ai/server/@yeonupark/mcp-soccer-data)
 - **MCP-Soccerdata** is an open-source [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) server that connects to the **SoccerDataAPI to deliver up-to-date football match information via natural language interactions**. 
 
 - Designed for use with MCP-enabled clients such as Claude Desktop, it allows users to retrieve football data by leveraging large language models (LLMs).
@@ -67,6 +68,14 @@ MCP-Soccerdata focuses on delivering **real-time information about ongoing footb
 
 ## 🚀 Quick Start
 
+### Installing via Smithery
+
+To install Amadeus MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@yeonupark/mcp-soccer-data):
+
+```bash
+npx -y @smithery/cli install @yeonupark/mcp-soccer-data --client claude
+```
+
 ### Prerequisites
 - Python 3.12+
 - `uv` package manager
@@ -115,6 +124,13 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json:`
   }
 }
 ```
+
+---
+## 🛠️ Tools
+The follwing tool is exposed to MCP clients:  
+### `get_livescores()`
+-> Returns real-time information about ongoing football matches around the world.
+
 
 ---
 ## 📝 License

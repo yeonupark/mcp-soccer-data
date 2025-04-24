@@ -2,23 +2,16 @@ from mcp.server.fastmcp import FastMCP
 import httpx
 import os
 
-# Initialize FastMCP server
 mcp = FastMCP("soccer-data")
 
 API_END_POINT = "https://api.soccerdataapi.com/"
 AUTH_KEY = os.environ.get("AUTH_KEY")
 
-@mcp.tool(
-    name="get_livescores",
-    description="Get live football scores from SoccerDataAPI",
-)
-async def get_livescores():
-    """
-    Get current live football scores using SoccerDataAPI.
+if not AUTH_KEY:
+    raise EnvironmentError("AUTH_KEY is not set in .env")
 
-    Returns:
-        JSON text with live match data.
-    """
+@mcp.tool()
+async def get_livescores():
 
     async with httpx.AsyncClient() as client:
         response = await client.get(
