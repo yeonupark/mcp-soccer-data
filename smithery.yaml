@@ -1,0 +1,25 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - soccerDataApiAuthKey
+    properties:
+      soccerDataApiAuthKey:
+        type: string
+        description: SoccerData API Auth Key (used as AUTH_KEY)
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['src/server.py'],
+      env: {
+        AUTH_KEY: config.soccerDataApiAuthKey
+      }
+    })
+  exampleConfig:
+    soccerDataApiAuthKey: your_dummy_auth_key
