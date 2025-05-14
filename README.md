@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/yeonupark-mcp-soccer-data-badge.png)](https://mseep.ai/app/yeonupark-mcp-soccer-data)
+
 # ⚽️ Soccerdata MCP Server
 [![smithery badge](https://smithery.ai/badge/@yeonupark/mcp-soccer-data)](https://smithery.ai/server/@yeonupark/mcp-soccer-data)
 - **MCP-Soccerdata** is an open-source [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) server that connects to the **SoccerDataAPI to deliver up-to-date football match information via natural language interactions**. 
